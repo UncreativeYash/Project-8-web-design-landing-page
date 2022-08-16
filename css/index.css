@@ -34,6 +34,7 @@ nav{
 .nav-items {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .nav-item {
     font-family: "Roboto";
@@ -88,4 +89,20 @@ nav{
 .vector-dot {
     left: 70px;
     bottom: 25%;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .intro-section {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    
+    .main-div:after {
+        display: none;
+    }
 }
